@@ -1,0 +1,330 @@
+
+.banner-image{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../images/LDP\ 1Mesa\ de\ trabajo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.nav-link{
+    background-color: #fff;
+    margin: 5px;
+    padding: 1px 20px;
+    border-top-right-radius: 15px;
+    color: #104b61 !important;
+}
+.content .banner-text{
+    background-color: rgba(255, 255, 255, 0.575);
+    color: #104b61;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.content p{
+    background-color: #104b61bd;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+@media(max-width:990px){
+    ul{
+        background-color: #fff;    
+    }
+}
+@media(max-width: 400px){
+    .content .banner-text,.content p {
+        width: 90%;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+}
+
+.description-hero{
+    font-size: 1.5rem;
+    color: #104b61;
+}
+.description-hero span{
+    font-weight: bold;
+}
+.hero-image{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 200px;
+}
+.hero{
+    margin-top: 8rem;
+}
+.cuotas{
+    margin-top: 8rem;
+    background-image: url(../images/bg-cuotas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 300px;
+}
+.cuotas h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #104b61;
+}
+.contact{
+    text-decoration: none;
+    color: #fff;
+    background-color: #104b61;
+    padding: 7px 25px;
+    border-radius: 5px;
+}
+.contact:hover{
+    color: #fff;
+}
+.form{
+    margin-top: 5rem;
+}
+.form-text{
+    font-size: 3.5rem;
+    color: #104b61;
+    line-height: 4rem;
+    font-weight: bold;
+}
+.form form{
+    background-color: #104b61;
+    background-image: url(../images/bg-form.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    border-radius: 15px;
+}
+.form form h2{
+    font-size: 1.5rem;
+    margin:15px;
+    padding: 15px;
+}
+.form form div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.form form .send{
+    margin: 15px 35px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.form form div input{
+    border: none;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.banner_logo{
+    width: 100%;
+    height: 25vh;
+    background-image: url(../images/bg-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria{
+    margin-top: 8rem;
+}
+.galeria > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galeria h2{
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #104b61;
+}
+.galeria section div img{
+    width: 100%;
+    margin: 5px;
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.diferencia h2{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+.diferencia{
+    width: 100%;
+    height: 25vh;
+    background-image: url(../images/bg-footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicios{
+    width: 100%;
+    height: 85vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(../images/LDP\ 9Mesa\ de\ trabajo\ 1.png);
+    background-size: cover;
+    position: relative;
+}
+.desenfoque{
+    width: 100%;
+    height: 85vh;
+    backdrop-filter: blur(10px);
+}
+.grid-servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 70%;
+    gap: 1rem;
+    margin: auto;
+}
+.servives{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 3px solid#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servives:nth-child(1),.servives:nth-child(4){
+    border-top-right-radius: 100px;
+    margin-top: 4rem;
+}
+.servives:nth-child(2),.servives:nth-child(5){
+    border-top-left-radius: 100px;
+    margin-top: 4rem;
+}
+.servives:nth-child(3),.servives:nth-child(6){
+    border-top-right-radius: 100px;
+    margin-top: 4rem;
+}
+.servives h3{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 15px;
+    font-weight: bold;
+}
+.finaly{
+    position: relative;
+}
+.finaly h3{
+    text-align: center;
+    padding: 3rem;
+}
+.finaly section{
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+.finaly section figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.finaly section figure img{
+    border: 2px solid #104b61;
+    padding: 15px;
+    border-top-right-radius: 40px;
+}
+.finaly  h3{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #104b61;
+}
+.finaly section figure h4{
+    color: #104b61;
+}
+.finaly .hoja-derecha{
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+@media(max-width:990px){
+    .servicios{
+        height: 100vh;
+    }
+    .grid-servicios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .servicios .hoja-izquierda{
+        display: none;
+    }
+    .finaly .hoja-derecha{
+        display: none;
+    }
+}
+@media(max-width: 420px){
+    .grid-servicios{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .servicios{
+        height: 90vh;
+    }
+    .diferencia h2{
+        font-size: 3rem;
+    }
+    .servives{
+        width: 150px;
+        height: 150px;
+    }
+    .servives img{
+        width: 50px;
+        margin: auto;
+    }
+    .servives:nth-child(1),.servives:nth-child(4){
+        border-top-right-radius:0;
+    }
+    .servives:nth-child(2),.servives:nth-child(5){
+        border-top-left-radius: 0;
+    }
+    .servives:nth-child(3),.servives:nth-child(6){
+        border-top-right-radius: 0;
+    }
+    .form-text{
+        font-size: 3rem;
+        margin-right: 3rem;
+    }
+    .finaly section{
+        grid-template-columns:1fr;
+    }
+    .finaly section figure{
+        justify-content: flex-start;
+    }
+}
