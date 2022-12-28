@@ -1,4 +1,3 @@
-
 .banner-image{
     background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../images/LDP\ 1Mesa\ de\ trabajo\ 1.png);
     background-repeat: no-repeat;
@@ -11,16 +10,16 @@
     margin: 5px;
     padding: 1px 20px;
     border-top-right-radius: 15px;
-    color: #104b61 !important;
+    color: #54797f !important;
 }
 .content .banner-text{
     background-color: rgba(255, 255, 255, 0.575);
-    color: #104b61;
+    color: #54797f;
     border-radius: 5px;
     font-weight: bold;
 }
 .content p{
-    background-color: #104b61bd;
+    background-color: #54797f;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
@@ -42,22 +41,24 @@
 
 .description-hero{
     font-size: 1.5rem;
-    color: #104b61;
+    color: #54797f;
 }
 .description-hero span{
     font-weight: bold;
 }
 .hero-image{
-    width: 100%;
+    width: 60%;
     height: 600px;
     object-fit: cover;
-    border-top-left-radius: 0px;
+    border-top-left-radius: 200px;
     border-top-right-radius: 200px;
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
+    border: 6px solid #54797f;
+    padding: 5px;
 }
 .hero{
-    margin-top: 8rem;
+    margin-top: -8rem;
 }
 .cuotas{
     margin-top: 8rem;
@@ -71,12 +72,12 @@
 .cuotas h1{
     font-size: 3.5rem;
     font-weight: bold;
-    color: #104b61;
+    color: #54797f;
 }
 .contact{
     text-decoration: none;
     color: #fff;
-    background-color: #104b61;
+    background-color: #54797f;
     padding: 7px 25px;
     border-radius: 5px;
 }
@@ -88,12 +89,12 @@
 }
 .form-text{
     font-size: 3.5rem;
-    color: #104b61;
+    color: #54797f;
     line-height: 4rem;
     font-weight: bold;
 }
 .form form{
-    background-color: #104b61;
+    background-color: #54797f;
     background-image: url(../images/bg-form.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -134,16 +135,118 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 10rem;
+    margin-top: 1rem;
     
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .galeria{
-    margin-top: 8rem;
+    height: 80vh;
 }
+.slider {
+    margin-top: 4rem;
+  }
+  
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 20%;
+    z-index: 1;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: -400px;
+    width: 10000px;
+  }
+  
+  .slides.shifting {
+    transition: left 0.2s ease-out;
+  }
+  
+  .slide {
+    width: 400px;
+    height: 300px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+    background: #ffcf47;
+    border-radius: 2px;
+  }
+  
+  .slider.loaded .slide:nth-child(2),
+  .slider.loaded .slide:nth-child(7) {
+    background: #54797f;
+    border-radius: 20%;
+    background-image: url(../images/LDP\ 1Mesa\ de\ trabajo\ 1.png);
+    background-size: cover;
+  }
+  .slider.loaded .slide:nth-child(1),
+  .slider.loaded .slide:nth-child(6) {
+    background: #54797f;
+    border-radius: 20%;
+    background-size: cover;
+    background-image: url(../images/LDP\ 2Mesa\ de\ trabajo\ 1.png);
+  }
+  .slider.loaded .slide:nth-child(3) {
+    background: #54797f;
+    background-size: cover;
+    border-radius: 20%;
+    background-image: url(../images/LDP\ 3Mesa\ de\ trabajo\ 1.png);
+  }
+  .slider.loaded .slide:nth-child(4) {
+    background: #54797f;
+    background-size: cover;
+    border-radius: 20%;
+    background-image: url(../images/LDP\ 4Mesa\ de\ trabajo\ 1.png);
+  }
+  .slider.loaded .slide:nth-child(5) {
+    background: #54797f;
+    background-size: cover;
+    border-radius: 20%;
+    background-image: url(../images/LDP\ 5Mesa\ de\ trabajo\ 1.png);
+  }
+  
+  .control {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: -20px;
+    z-index: 2;
+  }
+  
+  .prev,
+  .next {
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .prev {
+    background-image: url(../images/left.png);
+    left: -20px;
+  }
+  
+  .next {
+    background-image: url(../images/right.png);
+    right: -20px;
+  }
+  
+  .prev:active,
+  .next:active {
+    transform: scale(0.8);
+  }
+
+
 .galeria > div{
     display: flex;
     align-items: center;
@@ -155,7 +258,7 @@
     color: #fff;
     font-weight: bold;
     border-radius: 15px;
-    background-color: #104b61;
+    background-color: #54797f;
 }
 .galeria section div img{
     width: 100%;
@@ -257,22 +360,88 @@
     gap: 2rem;
 }
 .finaly section figure img{
-    border: 2px solid #104b61;
+    border: 2px solid #54797f;
     padding: 15px;
     border-top-right-radius: 40px;
 }
 .finaly  h3{
     font-weight: bold;
     font-size: 2.5rem;
-    color: #104b61;
+    color: #54797f;
 }
 .finaly section figure h4{
-    color: #104b61;
+    color: #54797f;
 }
 .finaly .hoja-derecha{
     position: absolute;
     top: -100px;
     right: 0;
+}
+
+.amenities{
+    margin-top: 10rem;
+    width: 100%;
+    height: 25vh;
+    background-color: #54797f;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amenities h4{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.bola-uno{
+    width: 150px;
+    height: 150px;
+    background-color: #54797f;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left: 20px;
+}
+.bola-dos{
+    width: 150px;
+    height: 150px;
+    background-color: #54797f;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+.featurette{
+    margin-top: 10rem;
+}
+.featurette-image{
+    border-top-right-radius: 400px;
+}
+.featurette-heading{
+    padding: 10px 30px;
+    display: inline-block;
+    background-color: #54797f;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.lead{
+    color: #54797f;
+    font-weight: 400;
+}
+.lead span{
+    color: #54797f;
+    font-weight: 900;
+}
+.base{
+    width: 100%;
+    height: 100%;
+    background-color: #54797f;
+    border-top-right-radius: 300px;
+}
+.footer p{
+    color: #54797f;
 }
 
 @media(max-width:990px){
@@ -295,7 +464,7 @@
         width: 100%;
     }
     .servicios{
-        height: 100vh;
+        height: 90vh;
     }
     .diferencia h2{
         font-size: 3rem;
@@ -326,5 +495,14 @@
     }
     .finaly section figure{
         justify-content: flex-start;
+    }
+    .hero-image{
+        width: 80%;
+    }
+    .banner_logo{
+        margin-top: -5rem;
+    }
+    .bola-dos{
+        top: 150px;
     }
 }

@@ -23,7 +23,7 @@
         <button
           class="navbar-toggler border-0"
           type="button"
-          data-bs-toggle="collapse"
+          data-bs-toggle="collapse" 
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
@@ -39,10 +39,13 @@
               <a class="nav-link " href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#inversion">Inversión</a>
+              <a class="nav-link " href="#inversion">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#amenities">Amenities</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#form">Contacto</a>
@@ -62,7 +65,7 @@
 
   <section class="container hero">
     <div class="row align-items-center">
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12 d-flex justify-content-center ">
         <img src="images/LDP 6Mesa de trabajo 1.png" class="hero-image" alt="imagen de una ruta">
       </div>
       <div class="col-lg-6 col-md-12">
@@ -89,6 +92,30 @@
       <div class="d-flex justify-content-center align-items-center">
         <a class="contact" href="#form">Contactanos</a>
       </div>
+  </section>
+
+  <section class="container galeria" id="galeria">
+    <div>
+      <h2>Galería</h2>
+    </div>
+
+    <div id="slider" class="slider">
+      <a id="prev" class="control prev"></a>
+      <div class="wrapper">
+        <div id="slides" class="slides">
+          <span class="slide"></span>
+          <span class="slide"></span>
+          <span class="slide"></span>
+          <span class="slide"></span>
+          <span class="slide"></span>
+        </div>
+      </div>
+      <a id="next" class="control next"></a>
+    </div>
+  </section>
+
+  <section class="banner_logo">
+    <img src="images/logoBlanco.png" width="200" alt="">
   </section>
 
   <section class="container form " id="form">
@@ -118,30 +145,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="banner_logo">
-    <img src="images/logoBlanco.png" width="200" alt="">
-  </section>
-
-  <section class="container galeria" id="galeria">
-    <div>
-      <h2>Galería</h2>
-    </div>
-    <section class="row mt-2">
-      <div class="col-lg-6 col-md-6">
-        <img src="images/LDP 2Mesa de trabajo 1.png" alt="galeria">
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <img src="images/LDP 3Mesa de trabajo 1.png" alt="galeria">
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <img src="images/LDP 4Mesa de trabajo 1.png" alt="galeria">
-      </div>
-      <div class="col-lg-6 col-md-6">
-        <img src="images/LDP 5Mesa de trabajo 1.png" alt="galeria">
-      </div>
-    </section>
   </section>
 
   <section class="diferencia">
@@ -205,7 +208,128 @@
       <img src="images/hoja02.png" width="350" class="hoja-derecha"  alt="Hoja derecha">
     </section>
 
+  <section class="amenities" id="amenities">
+    <div>
+      <h4>Amenities</h4>
+    </div>
+    <div class="bola-dos"></div>
+    <div class="bola-uno"></div>
+  </section>
+
+ <div class="container">
+
+  <section class="row justify-content-center align-items-center featurette">
+    <div class="col-lg-7 order-md-2">
+      <h2 class="featurette-heading">El lago</h2>
+      <p class="lead"><span>El</span> protagonista de nuestro entorno <span>natural,
+        donde todas</span> las actividades que se pueden
+        hacer dentro del barrio <span>se combinan con la
+        panorámica de un increible lago,donde ya sea
+        que estes haciendo ejercicio, meditando,
+        comiendo en familia o amigos, el lago</span> siempre
+        esta a la vista de todos,dandole una calidez
+        natural incomparable.<span>Naturaleza Pura.</span></p>
+    </div> 
+    <div class="col-lg-5 order-md-1">
+      <div class="base">
+        <img src="images/lago.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+      </div>
+    </div> 
+  </section>
+
+  <section class="row justify-content-center align-items-center featurette">
+    <div class="col-lg-7 order-md-2">
+      <h2 class="featurette-heading">Paseo comercial</h2>
+      <p class="lead"><span>Una opción diferente,</span> un recorrido <span>gastronómico tanto</span> diurno como nocturno, que cuenta
+        con <span>diferentes estilos y tipos de locales.
+        Variedad para que no tengas que salir del barrio</span>
+        para pasar un hermoso momento en familia o
+        amigos. Tal vez, tomando algo con vista al lago..</p>
+    </div> 
+    <div class="col-lg-5 order-md-1">
+      <div class="base">
+        <img src="images/paseoComercial.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+      </div>
+    </div> 
+  </section>
+
+  <section class="row justify-content-center align-items-center featurette">
+    <div class="col-lg-7 order-md-2">
+      <h2 class="featurette-heading">Centro deportivo</h2>
+      <p class="lead"><span>Pensamos que la salud es un punto muy
+        imporante</span> en la vidade nuestros habitantes..
+        Distintas actividades al aire libre pensadas para
+        personas de todas las edades.<span>¡Es hora de una vida
+        más saludable!</span>Súmate a los circuitos y mejora tu
+        calidad de vida.</p>
+    </div> 
+    <div class="col-lg-5 order-md-1">
+      <div class="base">
+        <img src="images/centroDeportivo.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+      </div>
+    </div> 
+  </section>
+
+  <section class="row justify-content-center align-items-center featurette">
+    <div class="col-lg-7 order-md-2">
+      <h2 class="featurette-heading">Áreas de trabajo</h2>
+      <p class="lead"><span>WorkSpace</span> al aire libre con totem's de recarga y
+        Wifi Libre.</p>
+    </div> 
+    <div class="col-lg-5 order-md-1">
+      <div class="base">
+        <img src="images/espacioDeTrabajo.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+      </div>
+    </div> 
+  </section>
+
+  <section class="row justify-content-center align-items-center featurette">
+    <div class="col-lg-7 order-md-2">
+      <h2 class="featurette-heading">Espacio zen</h2>
+      <p class="lead">Un lugar donde<span> predomina la relajación y la
+        conexión con la naturaleza..</span></p>
+    </div> 
+    <div class="col-lg-5 order-md-1">
+      <div class="base">
+        <img src="images/espacioZen.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+      </div>
+    </div> 
+  </section>
+
+  <section class="row justify-content-center align-items-center featurette">
+    <div class="col-lg-7 order-md-2">
+      <h2 class="featurette-heading">Plaza de mascotas</h2>
+      <p class="lead">¡Ya no es necesario salir del barrio para que tu mascota
+        pueda disfrutar del aire libre!<span> Espacio pensado
+        únicamente para tu gran amigo/a.</span></p>
+    </div> 
+    <div class="col-lg-5 order-md-1">
+      <div class="base">
+        <img src="images/plazaDePerros.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+      </div>
+    </div> 
+  </section>
+
+  <section class="row justify-content-center align-items-center featurette">
+    <div class="col-lg-7 order-md-2">
+      <h2 class="featurette-heading">Plaza de niños</h2>
+      <p class="lead">Un espacio <span>recreativo 100% creado para la diversión de los
+        niños</span> con la seguridad de un barrio privado estrategicamente<span> pensado para tu tranquilidad.</span></p>
+    </div> 
+    <div class="col-lg-5 order-md-1">
+      <div class="base">
+        <img src="images/PlazaDeNiños.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+      </div>
+    </div> 
+  </section>
+ </div>
+
+ <section class="text-center mt-5 footer">
+  <p class="text-center">Todos los Derechos Reservados | <span class="fw-bold">NDMV</span> &copy; 2022</p>
+ </section>
+
   <!-- SCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
