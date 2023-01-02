@@ -1,25 +1,31 @@
+:root{
+    --bg-principal: #54797f; 
+}
 .banner-image{
-    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../images/LDP\ 1Mesa\ de\ trabajo\ 1.png);
+    background-image:url(../images/LDP\ 3Mesa\ de\ trabajo\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
 }
+.navbar{
+    background-image: linear-gradient(#54797fc4,#54797f7c);
+}
 .nav-link{
     background-color: #fff;
+    color: var(--bg-principal) !important;
     margin: 5px;
     padding: 1px 20px;
     border-top-right-radius: 15px;
-    color: #54797f !important;
 }
 .content .banner-text{
     background-color: rgba(255, 255, 255, 0.575);
-    color: #54797f;
+    color: var(--bg-principal);
     border-radius: 5px;
     font-weight: bold;
 }
 .content p{
-    background-color: #54797f;
+    background-color: var(--bg-principal);
     color: #fff;
     padding: 5px;
     border-radius: 5px;
@@ -28,7 +34,11 @@
 }
 @media(max-width:990px){
     ul{
-        background-color: #fff;    
+        background-color: var(--bg-principal);    
+    }
+    .nav-link{
+        background-color: var(--bg-principal);
+        color: #fff !important;
     }
 }
 @media(max-width: 400px){
@@ -41,7 +51,7 @@
 
 .description-hero{
     font-size: 1.5rem;
-    color: #54797f;
+    color: var(--bg-principal);
 }
 .description-hero span{
     font-weight: bold;
@@ -54,7 +64,7 @@
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
-    border: 6px solid #54797f;
+    border: 6px solid var(--bg-principal);
     padding: 5px;
 }
 .hero{
@@ -72,12 +82,12 @@
 .cuotas h1{
     font-size: 3.5rem;
     font-weight: bold;
-    color: #54797f;
+    color: var(--bg-principal);
 }
 .contact{
     text-decoration: none;
     color: #fff;
-    background-color: #54797f;
+    background-color: var(--bg-principal);
     padding: 7px 25px;
     border-radius: 5px;
 }
@@ -89,12 +99,12 @@
 }
 .form-text{
     font-size: 3.5rem;
-    color: #54797f;
+    color: var(--bg-principal);
     line-height: 4rem;
     font-weight: bold;
 }
 .form form{
-    background-color: #54797f;
+    background-color: var(--bg-principal);
     background-image: url(../images/bg-form.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -184,32 +194,32 @@
   
   .slider.loaded .slide:nth-child(2),
   .slider.loaded .slide:nth-child(7) {
-    background: #54797f;
+    background: var(--bg-principal);
     border-radius: 20%;
     background-image: url(../images/LDP\ 1Mesa\ de\ trabajo\ 1.png);
     background-size: cover;
   }
   .slider.loaded .slide:nth-child(1),
   .slider.loaded .slide:nth-child(6) {
-    background: #54797f;
+    background: var(--bg-principal);
     border-radius: 20%;
     background-size: cover;
     background-image: url(../images/LDP\ 2Mesa\ de\ trabajo\ 1.png);
   }
   .slider.loaded .slide:nth-child(3) {
-    background: #54797f;
+    background: var(--bg-principal);
     background-size: cover;
     border-radius: 20%;
     background-image: url(../images/LDP\ 3Mesa\ de\ trabajo\ 1.png);
   }
   .slider.loaded .slide:nth-child(4) {
-    background: #54797f;
+    background: var(--bg-principal);
     background-size: cover;
     border-radius: 20%;
     background-image: url(../images/LDP\ 4Mesa\ de\ trabajo\ 1.png);
   }
   .slider.loaded .slide:nth-child(5) {
-    background: #54797f;
+    background: var(--bg-principal);
     background-size: cover;
     border-radius: 20%;
     background-image: url(../images/LDP\ 5Mesa\ de\ trabajo\ 1.png);
@@ -258,7 +268,7 @@
     color: #fff;
     font-weight: bold;
     border-radius: 15px;
-    background-color: #54797f;
+    background-color: var(--bg-principal);
 }
 .galeria section div img{
     width: 100%;
@@ -360,17 +370,17 @@
     gap: 2rem;
 }
 .finaly section figure img{
-    border: 2px solid #54797f;
+    border: 2px solid var(--bg-principal);
     padding: 15px;
     border-top-right-radius: 40px;
 }
 .finaly  h3{
     font-weight: bold;
     font-size: 2.5rem;
-    color: #54797f;
+    color: var(--bg-principal);
 }
 .finaly section figure h4{
-    color: #54797f;
+    color: var(--bg-principal);
 }
 .finaly .hoja-derecha{
     position: absolute;
@@ -382,7 +392,7 @@
     margin-top: 10rem;
     width: 100%;
     height: 25vh;
-    background-color: #54797f;
+    background-color: var(--bg-principal);
     color: #fff;
     position: relative;
     display: flex;
@@ -397,7 +407,7 @@
 .bola-uno{
     width: 150px;
     height: 150px;
-    background-color: #54797f;
+    background-color: var(--bg-principal);
     border-radius: 50%;
     position: absolute;
     top: -80px;
@@ -406,7 +416,7 @@
 .bola-dos{
     width: 150px;
     height: 150px;
-    background-color: #54797f;
+    background-color: var(--bg-principal);
     border-radius: 50%;
     position: absolute;
     right: 20px;
@@ -421,27 +431,37 @@
 .featurette-heading{
     padding: 10px 30px;
     display: inline-block;
-    background-color: #54797f;
+    background-color: var(--bg-principal);
     color: #fff;
     border-radius: 25px;
     font-weight: bold;
 }
 .lead{
-    color: #54797f;
+    color: var(--bg-principal);
     font-weight: 400;
 }
 .lead span{
-    color: #54797f;
+    color: var(--bg-principal);
     font-weight: 900;
 }
 .base{
     width: 100%;
     height: 100%;
-    background-color: #54797f;
     border-top-right-radius: 300px;
+    background-image: url(../images/bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.footer p{
-    color: #54797f;
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-image: url(../images/bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width:990px){

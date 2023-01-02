@@ -15,7 +15,7 @@
 </head>
 <body>
  <!-- Header -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3"> 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1"> 
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/logoBlanco.png" width="100" alt="logo de empresa">
@@ -39,10 +39,10 @@
               <a class="nav-link " href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#inversion">Servicios</a>
+              <a class="nav-link " href="#galeria">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#galeria">Galeria</a>
+              <a class="nav-link " href="#inversion">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#amenities">Amenities</a>
@@ -324,9 +324,38 @@
   </section>
  </div>
 
- <section class="text-center mt-5 footer">
-  <p class="text-center">Todos los Derechos Reservados | <span class="fw-bold">NDMV</span> &copy; 2022</p>
- </section>
+ <section class="container form " id="form">
+  <div class="row">
+    <div class="col-lg-6 d-flex align-items-center justify-content-end">
+      <p class="form-text">Pedinos una <br>
+        entrevista</p>
+    </div>
+    <div class="col-lg-6 col-md-12 ">
+      <div>
+        <form action="">
+          <h2>contacto</h2>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div>
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto">
+          </div>
+          <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+          </div>
+          <input type="submit" class="send" value="Aceptar">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <img src="images/logoBlanco.png" width="200" alt="">
+</footer>
 
   <!-- SCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
