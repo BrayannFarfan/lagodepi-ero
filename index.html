@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/lightbox.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Lagos de Piñero</title>
 </head>
@@ -48,7 +50,7 @@
               <a class="nav-link " href="#amenities">Amenities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#form">Contacto</a>
+              <a class="nav-link " href="#forms">Contacto</a>
             </li>
           </ul>
         </div>
@@ -58,17 +60,19 @@
     <!-- Banner -->
     <div class="banner-image d-flex justify-content-center align-items-center" id="home">
     <div class="content d-flex  justify-content-center align-items-center flex-wrap">
-      <p>Desconectarse,</p>
-      <p class="banner-text">para conectar</p>
+      <p class="wow animate__jello">Desconectarse,</p>
+      <p class="banner-text wow animate__heartBeat">para conectar</p>
     </div>
   </div>
 
   <section class="container hero">
     <div class="row align-items-center">
-      <div class="col-lg-6 col-md-12 d-flex justify-content-center ">
-        <img src="images/LDP 6Mesa de trabajo 1.png" class="hero-image" alt="imagen de una ruta">
+      <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+        <a href="images/LDP 6Mesa de trabajo 1.png" data-lightbox="models">
+          <img src="images/LDP 6Mesa de trabajo 1.png" class="hero-image" title="imagen de una ruta" alt="imagen de una ruta">
+        </a>
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12  wow animate__backInRight">
         <p class="description-hero text-start"><span class="description-hero
           __change">Lagos de Piñero es un barrio
           privado a 20 minutos de Rosario.</span>
@@ -87,16 +91,16 @@
 
 
   <section class="cuotas">
-    <h1 class="text-center">Entrega 30% <br>
+    <h1 class="text-center wow animate__backInLeft">Entrega 30% <br>
       +48 cuotas</h1>
       <div class="d-flex justify-content-center align-items-center">
-        <a class="contact" href="#form">Contactanos</a>
+        <a class="contact wow animate__backInRight" href="#form">Contactanos</a>
       </div>
   </section>
 
   <section class="container galeria" id="galeria">
     <div>
-      <h2>Galería</h2>
+      <h2 class="wow animate__backInDown">Galería</h2>
     </div>
 
     <div id="slider" class="slider">
@@ -115,18 +119,18 @@
   </section>
 
   <section class="banner_logo">
-    <img src="images/logoBlanco.png" width="200" alt="">
+    <img src="images/logoBlanco.png" width="200" alt="logo de empresa" class="wow animate__backInUp">
   </section>
 
-  <section class="container form " id="form">
+  <section class="container form " id="forms">
     <div class="row">
       <div class="col-lg-6 d-flex align-items-center justify-content-end">
-        <p class="form-text">Pedinos una <br>
+        <p class="form-text wow animate__backInLeft">Pedinos una <br>
           entrevista</p>
       </div>
       <div class="col-lg-6 col-md-12 ">
         <div>
-          <form action="">
+          <form id="form">
             <h2>contacto</h2>
             <div>
               <label for="email">Email</label>
@@ -140,15 +144,21 @@
               <label for="mensaje">Mensaje</label>
               <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
             </div>
-            <input type="submit" class="send" value="Aceptar">
+            <input type="submit" class="send" id="button" value="Enviar">
           </form>
+          <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+          <script type="text/javascript">
+            emailjs.init('Wlbum1Mk7IZQUgcj3')
+          </script>
         </div>
       </div>
     </div>
   </section>
 
   <section class="diferencia">
-    <h2>Lo que nos diferencia</h2>
+    <h2 class="wow animate__bounceIn">Lo que nos diferencia</h2>
   </section>
 
   <section class="servicios" id="inversion">
@@ -156,28 +166,40 @@
       <div class="ser container">
         <div class="grid-servicios">
           <figure class="servives">
-            <img src="images/6.png" width="70" alt="">
-            <h3>Calles 100% <br>pavimentadas</h3>
+            <div class="wow animate__zoomInDown text-center">
+              <img src="images/6.png"  width="70" alt="">
+              <h3>Calles 100% <br>pavimentadas</h3>
+            </div>
           </figure>
           <figure class="servives">
-            <img src="images/11.png" width="100" alt="">
-            <h3>Cordón Cuneta</h3>
+            <div class="wow animate__zoomInDown text-center">
+              <img src="images/11.png" width="100" alt="">
+              <h3>Cordón Cuneta</h3>
+            </div>
           </figure>
           <figure class="servives">
-            <img src="images/2.png" width="100" alt="">
-            <h3>Cloacas</h3>
+            <div class="wow animate__zoomInDown text-center">
+              <img src="images/2.png" width="100" alt="">
+              <h3>Cloacas</h3>
+            </div>
           </figure>
           <figure class="servives">
-            <img src="images/12.png" width="100" alt="">
-            <h3>Gas Natural</h3>
+            <div class="wow animate__zoomInUp text-center">
+              <img src="images/12.png" width="100" alt="">
+              <h3>Gas Natural</h3>
+            </div>
           </figure>
           <figure class="servives">
-            <img src="images/13.png" width="100" alt="">
-            <h3>Lotes 100%</h3>
+            <div class="wow animate__zoomInUp text-center">
+              <img src="images/13.png" width="100" alt="">
+              <h3>Lotes 100%</h3>
+            </div>
           </figure>
           <figure class="servives">
-            <img src="images/10.png" width="100" alt="">
-            <h3>Amplios Espacios</h3>
+            <div class="wow animate__zoomInUp text-center">
+              <img src="images/10.png" width="100" alt="">
+              <h3>Amplios Espacios</h3>
+            </div>
           </figure>
         </div>
       </div>
@@ -188,19 +210,19 @@
   <section class="finaly">
     <h3>Servicios</h3>
     <section>
-      <figure>
+      <figure class="text-center wow animate__backInLeft">
         <img src="images/grifo-de-agua.png" width="80" alt="grifo de agua">
         <h4>Agua Potable</h4>
       </figure>
-      <figure>
+      <figure class="text-center wow animate__backInRight">
         <img src="images/antena.png" width="90" alt="grifo de agua">
         <h4>Red Media y baja <br>tensión</h4>
       </figure>
-      <figure>
+      <figure class="text-center wow animate__backInLeft">
         <img src="images/nature.png" width="90" alt="grifo de agua">
         <h4>Florestación</h4>
       </figure>
-      <figure>
+      <figure class="text-center wow animate__backInRight">
         <img src="images/wifi.png" width="90" alt="grifo de agua">
         <h4>Internet por fibra <br>óptica</h4>
       </figure>
@@ -219,7 +241,7 @@
  <div class="container">
 
   <section class="row justify-content-center align-items-center featurette">
-    <div class="col-lg-7 order-md-2">
+    <div class="col-lg-7 order-md-2  wow animate__backInRight">
       <h2 class="featurette-heading">El lago</h2>
       <p class="lead"><span>El</span> protagonista de nuestro entorno <span>natural,
         donde todas</span> las actividades que se pueden
@@ -232,13 +254,15 @@
     </div> 
     <div class="col-lg-5 order-md-1">
       <div class="base">
-        <img src="images/lago.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
-      </div>
+        <a href="images/lago.jpg" data-lightbox="models">
+          <img src="images/lago.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        </a>
+        </div>
     </div> 
   </section>
 
   <section class="row justify-content-center align-items-center featurette">
-    <div class="col-lg-7 order-md-2">
+    <div class="col-lg-7 order-md-2 wow animate__backInRight">
       <h2 class="featurette-heading">Paseo comercial</h2>
       <p class="lead"><span>Una opción diferente,</span> un recorrido <span>gastronómico tanto</span> diurno como nocturno, que cuenta
         con <span>diferentes estilos y tipos de locales.
@@ -248,13 +272,15 @@
     </div> 
     <div class="col-lg-5 order-md-1">
       <div class="base">
-        <img src="images/paseoComercial.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        <a href="images/paseoComercial.jpg" data-lightbox="models">
+          <img src="images/paseoComercial.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        </a>
       </div>
     </div> 
   </section>
 
   <section class="row justify-content-center align-items-center featurette">
-    <div class="col-lg-7 order-md-2">
+    <div class="col-lg-7 order-md-2 wow animate__backInRight">
       <h2 class="featurette-heading">Centro deportivo</h2>
       <p class="lead"><span>Pensamos que la salud es un punto muy
         imporante</span> en la vidade nuestros habitantes..
@@ -265,39 +291,45 @@
     </div> 
     <div class="col-lg-5 order-md-1">
       <div class="base">
-        <img src="images/centroDeportivo.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
-      </div>
+        <a href="images/centroDeportivo.jpg" data-lightbox="models">
+          <img src="images/centroDeportivo.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        </a>
+        </div>
     </div> 
   </section>
 
   <section class="row justify-content-center align-items-center featurette">
-    <div class="col-lg-7 order-md-2">
+    <div class="col-lg-7 order-md-2 wow animate__backInRight">
       <h2 class="featurette-heading">Áreas de trabajo</h2>
       <p class="lead"><span>WorkSpace</span> al aire libre con totem's de recarga y
         Wifi Libre.</p>
     </div> 
     <div class="col-lg-5 order-md-1">
       <div class="base">
-        <img src="images/espacioDeTrabajo.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        <a href="images/espacioDeTrabajo.jpg" data-lightbox="models">  
+          <img src="images/espacioDeTrabajo.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        </a>
       </div>
     </div> 
   </section>
 
   <section class="row justify-content-center align-items-center featurette">
-    <div class="col-lg-7 order-md-2">
+    <div class="col-lg-7 order-md-2 wow animate__backInRight">
       <h2 class="featurette-heading">Espacio zen</h2>
       <p class="lead">Un lugar donde<span> predomina la relajación y la
         conexión con la naturaleza..</span></p>
     </div> 
     <div class="col-lg-5 order-md-1">
       <div class="base">
-        <img src="images/espacioZen.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
-      </div>
+        <a href="images/espacioZen.jpg" data-lightbox="models">
+          <img src="images/espacioZen.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        </a>
+        </div>
     </div> 
   </section>
 
   <section class="row justify-content-center align-items-center featurette">
-    <div class="col-lg-7 order-md-2">
+    <div class="col-lg-7 order-md-2 wow animate__backInRight">
       <h2 class="featurette-heading">Plaza de mascotas</h2>
       <p class="lead">¡Ya no es necesario salir del barrio para que tu mascota
         pueda disfrutar del aire libre!<span> Espacio pensado
@@ -305,29 +337,33 @@
     </div> 
     <div class="col-lg-5 order-md-1">
       <div class="base">
-        <img src="images/plazaDePerros.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        <a href="images/plazaDePerros.jpg" data-lightbox="models">
+          <img src="images/plazaDePerros.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        </a>
       </div>
     </div> 
   </section>
 
   <section class="row justify-content-center align-items-center featurette">
-    <div class="col-lg-7 order-md-2">
+    <div class="col-lg-7 order-md-2 wow animate__backInRight">
       <h2 class="featurette-heading">Plaza de niños</h2>
       <p class="lead">Un espacio <span>recreativo 100% creado para la diversión de los
         niños</span> con la seguridad de un barrio privado estrategicamente<span> pensado para tu tranquilidad.</span></p>
     </div> 
     <div class="col-lg-5 order-md-1">
       <div class="base">
-        <img src="images/PlazaDeNiños.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        <a href="images/PlazaDeNiños.jpg" data-lightbox="models">
+          <img src="images/PlazaDeNiños.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" alt="lago" title="lago">
+        </a>
       </div>
     </div> 
   </section>
  </div>
 
- <section class="container form " id="form">
+ <section class="container form ">
   <div class="row">
     <div class="col-lg-6 d-flex align-items-center justify-content-end">
-      <p class="form-text">Pedinos una <br>
+      <p class="form-text wow animate__backInLeft">Pedinos una <br>
         entrevista</p>
     </div>
     <div class="col-lg-6 col-md-12 ">
@@ -359,6 +395,35 @@
 
   <!-- SCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+  </script>
   <script src="js/main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
+<script>
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_0lb2c28';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      alert('Mensaje enviado correctamente');
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert('No se envio el mensaje');
+    });
+});
+</script>
 </html>
