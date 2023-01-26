@@ -135,9 +135,9 @@ document.getElementById('form')
     .then(() => {
       btn.value = 'Enviar';
       // alert('Mensaje enviado correctamente');
-      let btns = document.getElementById('btn1');
+      
 
-btns.onclick = function() {
+btn.onclick = function() {
     swal({
         title: "Etes-vous sûr?",
         text: "Une fois cliqué sur 'Ok', pas de retour en arrière. ",
