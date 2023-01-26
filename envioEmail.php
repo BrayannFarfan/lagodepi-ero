@@ -13,7 +13,7 @@ $email = $_POST['email'];
 $asunto = $_POST['asunto'];
 $mensaje = $_POST['mensaje'];
 
-if( empty(trim($email))) $email = 'anonimo';
+// if( empty(trim($email))) $email = 'anonimo';
 
 $body = <<<HTML
     <h1>Contacto desde la web</h1>
