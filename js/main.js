@@ -119,9 +119,25 @@ function slide(wrapper, items, prev, next) {
 slide(slider, sliderItems, prev, next);
 
 
-let btn = document.getElementById('btn1');
 
-btn.onclick = function() {
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_0lb2c28';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      // alert('Mensaje enviado correctamente');
+      let btns = document.getElementById('btn1');
+
+btns.onclick = function() {
     swal({
         title: "Etes-vous sûr?",
         text: "Une fois cliqué sur 'Ok', pas de retour en arrière. ",
@@ -141,3 +157,12 @@ btn.onclick = function() {
 
 
 }
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert('No se envio el mensaje');
+    });
+});
+
+
+
+
