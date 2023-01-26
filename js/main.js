@@ -117,3 +117,27 @@ function slide(wrapper, items, prev, next) {
 }
 
 slide(slider, sliderItems, prev, next);
+
+
+let btn = document.getElementById('btn1');
+
+btn.onclick = function() {
+    swal({
+        title: "Etes-vous sûr?",
+        text: "Une fois cliqué sur 'Ok', pas de retour en arrière. ",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    })
+    .then((ok) => {
+        if(ok) {
+            swal("Votre commande est en cours de Livraison!", {
+                icon: "success",
+            });
+        } else {
+            swal("Vous etes revenu en arrière.");
+        }
+    });
+
+
+}
