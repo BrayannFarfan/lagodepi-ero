@@ -120,48 +120,48 @@ slide(slider, sliderItems, prev, next);
 
 
 
-// const btn = document.getElementById('button');
+const btn = document.getElementById('button');
 
-// document.getElementById('form')
-//  .addEventListener('submit', function(event) {
-//    event.preventDefault();
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-//    btn.value = 'Enviando...';
+   btn.value = 'Enviando...';
 
-//    const serviceID = 'default_service';
-//    const templateID = 'template_0lb2c28';
+   const serviceID = 'default_service';
+   const templateID = 'template_0lb2c28';
 
-//    emailjs.sendForm(serviceID, templateID, this)
-//     .then(() => {
-//       btn.value = 'Enviar';
-//       // alert('Mensaje enviado correctamente');
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      // alert('Mensaje enviado correctamente');
       
 
-// btn.onclick = function() {
-//     swal({
-//         title: "Etes-vous sûr?",
-//         text: "Une fois cliqué sur 'Ok', pas de retour en arrière. ",
-//         icon: "warning",
-//         buttons: true,
-//         dangerMode: true
-//     })
-//     .then((ok) => {
-//         if(ok) {
-//             swal("Votre commande est en cours de Livraison!", {
-//                 icon: "success",
-//             });
-//         } else {
-//             swal("Vous etes revenu en arrière.");
-//         }
-//     });
+btn.onclick = function() {
+    swal({
+        title: "Etes-vous sûr?",
+        text: "Une fois cliqué sur 'Ok', pas de retour en arrière. ",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    })
+    .then((ok) => {
+        if(ok) {
+            swal("Votre commande est en cours de Livraison!", {
+                icon: "success",
+            });
+        } else {
+            swal("Vous etes revenu en arrière.");
+        }
+    });
 
 
-// }
-//     }, (err) => {
-//       btn.value = 'Enviar';
-//       alert('No se envio el mensaje');
-//     });
-// });
+}
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert('No se envio el mensaje');
+    });
+});
 
 
 
